@@ -21,7 +21,7 @@ Todos.todosController = SC.ArrayProxy.create({
     return this.filterProperty('isDone', false).get('length');
   }.property('@each.isDone'),
 
-  allAreDone: function(key, value) {
+  allAreDone: function(value) {
     if (value !== undefined) {
       this.setEach('isDone', value);
 
